@@ -1,0 +1,372 @@
+/* stylesheet  */
+
+/* import fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+/* utilities  */
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: #F3F1FF;
+}
+
+/* common class */
+.container {
+    max-width: 870px;
+    margin: auto;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* stylesheet  */
+
+
+#header{
+    position: sticky;
+    background: #562EFF;
+    color: #FFFFFF;
+    padding: 25px 0px;
+    top: 0%;
+    z-index: 1;
+}
+.header-container{
+    position: relative;
+}
+.header-container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.header-container nav a.logo{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a.logo img{
+    max-width: 100%;
+    width: 40px;
+    height: 51px;
+}
+a.logo span.text{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    display: block;
+    margin-left: 15.5px;
+}
+
+nav ul.primary-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+ul.primary-menu a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 36px;
+}
+ul.primary-menu li:last-child a{
+    margin-right: 0px;
+}
+
+#main {
+    position: relative;
+    margin: 1rem;
+}
+
+/*--------------
+ top players
+ --------------  */
+
+.top-players,
+.top-blogs {
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-bottom: 1px solid #D1D1D1;
+
+}
+
+.container-title {
+    color: #562EFF;
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    grid-row-gap: 30px;
+
+}
+
+.players .player {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player span.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    line-height: 27px;
+    display: block;
+    margin-left: 16px;
+}
+
+/*--------------
+ top Blogs
+ --------------  */
+
+.top-blogs {
+    padding-bottom: 42px;
+}
+
+.top-blogs .container-title {
+    margin-bottom: 31px;
+}
+
+.blogs-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    grid-column-gap: 46px;
+    grid-row-gap: 26px;
+}
+
+.blog {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.blog .thumbnail {
+    width: 177px;
+    height: 117px;
+    position: relative;
+}
+
+.thumbnail img {
+    width: 177px;
+    height: 117px;
+    max-width: inherit;
+}
+
+.blog-details {
+    margin-left: 16px;
+    position: relative;
+}
+
+.blog-details h3.title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.blog-details p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #9F9F9F;
+}
+
+.blog-details p a {
+    color: #562EFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*--------------
+ Course Content
+ --------------  */
+.latest-course {
+    margin: 1.1rem 0rem;
+
+}
+
+.course-content {
+    position: relative;
+    background: #FFFFFF;
+    padding: 23px 28px;
+    border-radius: 5px;
+}
+.course-content .container-title{
+    margin-bottom: 11px;
+}
+.courses {
+    display: flex;
+    position: relative;
+    align-items: center;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+.course{
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.course-details {
+    position: relative;
+}
+
+.course-details span {
+    display: block;
+}
+
+.course-details .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.0336px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.course-details .author{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.6913px;
+    line-height: 17px;
+    color: #ED6B4F;
+}
+.course-status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+.ratings{
+    display: flex;
+    align-items: center;
+    font-size: 14.6913px;
+    position: relative;
+}
+.ratings .stars{
+    margin-right: 10px;
+}
+.stars i{
+    color: #FFC014;
+}
+.duration{
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #FF4A60;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 4px 8px;
+}
+.duration i{
+    margin-right: 5px;
+}
+.duration .time{
+    font-weight: 500;
+    font-size: 14.6913px;
+}
+
+
+/* responsive  */
+@media (max-width: 870px) {
+    #top-player-blog{
+        padding: 0rem;
+    }
+    .container {
+        max-width: 100%;
+        padding: 1rem 1rem;
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog .blog-details{
+        margin-left: 0px;
+        margin-top: 18px;
+    }
+    .blog-details br{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogs-content{
+       grid-template-columns: 1fr;
+    }
+    .blog{
+        flex-direction: row;
+    }
+    .blog .blog-details{
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+    .courses{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .blog{
+        flex-direction: column;
+    }
+     .blog .blog-details {
+         margin-left: 0px;
+         margin-top: 18px;
+     }
+     .blog .thumbnail {
+         width: 100%;
+         height: auto;
+     }
+     .thumbnail img {
+         width: 100%;
+         height: auto;
+         max-width: inherit;
+     }
+     .blog-details br{
+         display: none;
+     }
+}
