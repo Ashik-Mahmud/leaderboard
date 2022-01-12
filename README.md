@@ -14,7 +14,7 @@ This is simple leader board template using html css grid layout somthing.
 
 ### Here is live link 
 
-[Click Here to Go](#)
+[Click Here to Go](https://ashik-mahmud.github.io/leaderboard/)
 
 ### Here is Screenshot Demo
 
