@@ -324,6 +324,55 @@ ul.primary-menu li:last-child a{
     }
 }
 
+/*------------------
+ Foote Part Stayles  
+ -------------------*/
+#footer{
+    background: #562EFF;
+    position: relative;
+    padding: 1rem 0rem;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer-logo img{
+    max-width: 8%;
+}
+.footer-logo .footer-logo__name{
+    color: #FFFFFF;
+    margin-left: .5rem;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    
+}
+
+.footer-content .social-icon{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.social-icon a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    margin-right: .7rem;
+}
+.social-icon a:last-child{
+    margin-right: 0rem;
+}
+
 @media (max-width: 768px) {
     .players{
         grid-template-columns: repeat(2, 1fr);
