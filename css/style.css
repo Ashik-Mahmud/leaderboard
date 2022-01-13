@@ -337,6 +337,7 @@ ul.primary-menu li:last-child a{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
